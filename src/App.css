@@ -1,0 +1,56 @@
+.App {
+  text-align: center;
+}
+
+.header-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 8vh;
+}
+
+#navbar li:after {
+  content: " | ";
+}
+
+#navbar li:last-child:after {
+  content: "";
+}
+
+#navbar {
+  position: absolute;
+  right: 2vw;
+}
+
+#navbar ul li{
+  float: left;
+  display: inline;
+}
+
+#navbar a {
+  text-decoration: none;
+  font-size: 0.80rem;
+  color: white;
+}
+
+#navbar a:hover {
+  font-size: 0.9rem;
+}
+
+header {
+  display: flex;
+  background-color: #202020;
+  height: 8vh;
+  position: fixed;
+  width: 100vw;
+  z-index: 10;
+  color: white;
+}
+
+.intro {
+  margin: auto;
+  color: white;
+  height: 90vh;
+  z-index: 1;
+}
