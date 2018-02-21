@@ -36,12 +36,12 @@ h3 {
 
 #navbar a {
   text-decoration: none;
-  font-size: 0.80rem;
+  font-size: 0.9rem;
   color: white;
 }
 
 #navbar a:hover {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #FFC107;
 }
 
@@ -53,7 +53,8 @@ header {
   width: 100vw;
   z-index: 10;
   color: white;
-  border-bottom: 1px solid #FFC107
+  border-bottom: 1px solid #FFC107;
+  font-size: 1rem;
 }
 
 #home {

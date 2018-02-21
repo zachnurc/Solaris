@@ -44,13 +44,13 @@ componentDidMount() {
     }
   }, false);
 
-  // window.addEventListener("scroll", (event) => {
-  //   if (window.scrollY > this.state.scrollLocation){
-  //     this.handleScroll('down');
-  //   }else if(window.scrollY < this.state.scrollLocation){
-  //     this.handleScroll('up');
-  //   }
-  // }, false);
+  window.addEventListener("scroll", (event) => {
+    if (window.scrollY > this.state.scrollLocation){
+      this.handleScroll('down');
+    }else if(window.scrollY < this.state.scrollLocation){
+      this.handleScroll('up');
+    }
+  }, false);
 }
 
   render() {
@@ -64,10 +64,10 @@ componentDidMount() {
           <div id="navbar" >
             <ul>
               <li>
-                <a href="#meet-memo">Meet Solaris</a>
+                <a href="#">Meet Solaris</a>
               </li>
               <li>
-                <a href="#features">Contact</a>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </div>
