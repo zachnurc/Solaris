@@ -153,6 +153,7 @@ input[type=checkbox]:checked ~ #navbar {
   }
 
   .show-menu {
+    padding-left: 5vw;
     margin: auto 0;
     display: block;
   }
