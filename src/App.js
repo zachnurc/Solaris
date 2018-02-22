@@ -60,7 +60,8 @@ componentDidMount() {
           <a href="#home">
             <img className="header-logo" src={logo} alt={logo} />
           </a>
-
+          <label for="show-menu" class="show-menu">Show Menu</label>
+          <input type="checkbox" id="show-menu" role="button" />
           <div id="navbar" >
             <ul>
               <li>

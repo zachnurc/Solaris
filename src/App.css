@@ -103,3 +103,45 @@ footer {
   color: white;
   height: 30vh;
 }
+
+.show-menu {
+  text-decoration: none;
+  display: none;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ #navbar {
+  display: block;
+}
+
+
+@media only screen and (max-width: 500px) {
+
+  #navbar li:after {
+    content: "";
+  }
+
+  #navbar {
+    position: absolute;
+    display: none;
+    left: 2vw;
+    width: 25vw;
+  }
+
+  li {
+    margin-bottom: 1px;
+  }
+
+  #navbar ul li {
+  float: none;
+  display: block;
+  }
+
+  .show-menu {
+    display: block;
+  }
+
+}
