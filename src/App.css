@@ -81,6 +81,7 @@ header {
   height: 92vh;
   width: 80vw;
   z-index: 1;
+  font-size: 1rem;
 }
 
 .intro-img {
