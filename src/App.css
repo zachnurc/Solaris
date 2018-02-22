@@ -120,6 +120,13 @@ input[type=checkbox]:checked ~ #navbar {
 
 @media only screen and (max-width: 500px) {
 
+  .header-logo {
+    position: absolute;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    height: 8vh;
+  }
+
   #navbar li:after {
     content: "";
   }
