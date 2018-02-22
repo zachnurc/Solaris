@@ -125,22 +125,28 @@ input[type=checkbox]:checked ~ #navbar {
   }
 
   #navbar {
+    margin-top: calc(8vh + 1px);
     position: absolute;
     display: none;
-    left: 2vw;
+    left: 0;
     width: 25vw;
+    background-color: #202020
   }
 
-  li {
-    margin-bottom: 1px;
+  #navbar ul {
+    margin: 0;
+    padding-left: 0;
   }
 
   #navbar ul li {
+  border: 1px solid #FFC107;
+  margin-bottom: 1px;
   float: none;
   display: block;
   }
 
   .show-menu {
+    margin: auto 0;
     display: block;
   }
 
