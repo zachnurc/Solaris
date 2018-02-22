@@ -83,6 +83,10 @@ header {
   z-index: 1;
 }
 
+.intro-img {
+  width: 50vw;
+}
+
 .intro p{
   margin: 0;
   font-size: 1.2rem;

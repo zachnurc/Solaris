@@ -76,7 +76,7 @@ componentDidMount() {
         <div id="home">
           <div className="background"></div>
           <div className="container">
-            <img src={logo} alt={logo} />
+            <img className="intro-img" src={logo} alt={logo} />
             <p>
               Hey DJ you suck
             </p>
