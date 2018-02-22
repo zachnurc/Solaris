@@ -60,17 +60,31 @@ header {
 #home {
   padding-top: 8vh;
   height: 92vh;
-  background-color: #202020;
 }
 
-.intro {
-  margin: auto;
+.background {
+  background-image: url("media/cover.jpg");
+  background-size: contain;
+  background-repeat: repeat-y;
+  filter: blur(2px) grayscale(60%);
+  height: 92vh;
+  position: absolute;
+  width: 100%;
+  margin: 0;
+}
+
+.container {
+  position: absolute;
+  margin: 0 10vw;
   color: white;
-  height: 90vh;
+  background-color: #202020;
+  height: 92vh;
+  width: 80vw;
   z-index: 1;
 }
 
 .intro p{
+  margin: 0;
   font-size: 1.2rem;
 }
 

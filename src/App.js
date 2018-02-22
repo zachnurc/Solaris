@@ -74,14 +74,19 @@ componentDidMount() {
 
         </header>
         <div id="home">
-          <div className="intro">
+          <div className="background"></div>
+          <div className="container">
+            <img src={logo} alt={logo} />
             <p>
               Hey DJ you suck
             </p>
           </div>
         </div>
         <div id="contact">
-          <h3>Contact</h3>
+          <div className="background"></div>
+          <div className="container">
+            <h3>Contact</h3>
+          </div>
         </div>
         <footer>
           <p>Copyright Solaris 2017</p>
