@@ -1,11 +1,11 @@
 .App {
   text-align: center;
-  font-size: 0;
 }
 
 h3 {
   font-size: 1.6rem;
   color: white;
+  margin: 0 auto;
 }
 
 .header-logo {
@@ -13,53 +13,48 @@ h3 {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  height: 8vh;
-}
-
-#navbar li:after {
-  content: " | ";
-}
-
-#navbar li:last-child:after {
-  content: "";
+  height: calc(8vh - 1px);
 }
 
 #navbar {
-  position: absolute;
   right: 2vw;
-}
-
-#navbar ul li{
-  float: left;
-  display: inline;
+  margin: 2vh auto;
+  max-width: calc(50vw - 200px);
+  position: fixed;
 }
 
 #navbar a {
+  display: inline-block;
   text-decoration: none;
-  font-size: 0.9rem;
+  padding-left: 10px;
+  font-size: 0.70rem;
   color: white;
 }
 
 #navbar a:hover {
-  font-size: 1rem;
   color: #FFC107;
+  text-decoration: underline;
+}
+
+#navbar .active {
+  color: #FFC107;
+  text-decoration: underline;
 }
 
 header {
   display: flex;
   background-color: #202020;
+  min-height: 48px;
   height: 8vh;
   position: fixed;
   width: 100vw;
   z-index: 10;
   color: white;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   border-bottom: 1px solid #FFC107;
-  font-size: 1rem;
-}
-
-#home {
-  padding-top: 8vh;
-  height: 92vh;
 }
 
 .background {
@@ -67,42 +62,86 @@ header {
   background-size: contain;
   background-repeat: repeat-y;
   filter: blur(2px) grayscale(60%);
-  height: 92vh;
-  position: absolute;
+  height: 100vh;
+  position: fixed;
   width: 100%;
   margin: 0;
+  z-index: -1;
 }
 
-.container {
-  position: absolute;
-  margin: 0 10vw;
+#container{
+  padding-top: calc(8vh + 1px);
+}
+
+p{
   color: white;
+  margin: 0 auto;
+}
+
+#home {
+  margin: auto;
+  width: 80%;
   background-color: #202020;
-  height: 92vh;
-  width: 80vw;
-  z-index: 1;
-  font-size: 1rem;
-}
-
-.intro-img {
-  width: 50vw;
-}
-
-.intro p{
-  margin: 0;
-  font-size: 1.2rem;
+  height: 100vh;
 }
 
 #contact {
-  padding-top: 8vh;
   background-color: #202020;
-  height: 62vh;
+  margin: auto;
+  width: 80%;
+  height: auto;
+}
+
+.input-box {
+  width: 100%;
+  height: 5vh;
+  border: 1px solid;
+  border-radius: 7px;
+  padding: 3px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.input-box-error {
+  border-color: red;
+}
+
+.col-small {
+  width: 21vw;
+  padding-left: 2.4vw;
+}
+
+.no-left-padding {
+  padding-left: 0
+}
+
+.col-wide {
+  display: flex;
+  margin: 0 auto;
+  width: 69vw;
+}
+
+input[type=Submit] {
+  min-width: 100px;
+  width: 10vw;
+  text-align: center;
+  padding: 0;
+  transition: all 0.5s;
+  background-color: #FFC107;
+  border-color: #FFC107;
+  font-size: 1.1rem;
+  margin: auto;
+}
+
+input[type=Submit]:hover {
+  background-color: #ffd760;
+  border-color: #ffd760;
 }
 
 footer {
   background-color: #202020;
   color: white;
-  height: 30vh;
+  z-index: 1;
 }
 
 .show-menu {
@@ -116,41 +155,29 @@ input[type=checkbox] {
 
 input[type=checkbox]:checked ~ #navbar {
   display: block;
+  z-index: 10;
 }
 
 
-@media only screen and (max-width: 500px) {
-
-  .header-logo {
-    position: absolute;
-    left: 85%;
-    transform: translate(-50%, -50%);
-    height: 8vh;
-  }
-
-  #navbar li:after {
-    content: "";
-  }
+@media only screen and (max-width: 1024px) {
 
   #navbar {
-    margin-top: calc(8vh + 1px);
-    position: absolute;
+    margin: 0;
+    margin-top: 8vh;
+    position: fixed;
     display: none;
     left: 0;
-    width: 25vw;
-    background-color: #202020
+    background-color: #202020;
+    width: auto;
+    max-width: 200px;
   }
 
-  #navbar ul {
+  #navbar a {
+    font-size: 1rem;
     margin: 0;
     padding-left: 0;
-  }
-
-  #navbar ul li {
-  border: 1px solid #FFC107;
-  margin-bottom: 1px;
-  float: none;
-  display: block;
+    display: block;
+    margin-bottom: 1px;
   }
 
   .show-menu {
